@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: whitesmoke;
+    font-family: 'Cinzel', sans-serif;
+}
+
+.main {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.featured-artical img, .artical img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Sticky nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 60px;
+    color: rgb(55, 55, 55);
+    background: whitesmoke;
+}
+
+.nav-left h1 {
+    font-size: 3rem;
+    transition: font-size 0.3s ease;
+}
+
+#navbar.scrolled .nav-left h1 {
+    font-size: 1.5rem;
+}
+
+.nav-right a {
+    margin-left: 20px;
+    color: hsl(0, 0%, 13%);
+}
+
+    .nav-right a:hover {
+        color: hsl(0, 0%, 25%);
+    }
+
+/* Featured Artical */
+.featured-artical {
+    margin-bottom: 50px;
+}
+
+    .featured-artical h1 {
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
+
+    .featured-artical p {
+        font-size: 1.2rem;
+        color: rgb(70, 70, 70);
+        margin-bottom: 20px;
+    }
+
+/* Smaller Articals */
+.smaller-articals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artical {
+    flex: 1;
+    margin: 0 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+    .artical h2 {
+        font-size: 1.8rem;
+        margin: 15px 0;
+    }
+
+    .artical p {
+        font-size: 1rem;
+        color: rgb(70, 70, 70);
+    }
+
+a {
+    text-decoration: none;
+    color: hsl(204, 100%, 50%);
+    transition: color 0.3s;
+}
+
+    a:hover {
+        color: hsl(204, 100%, 35%);
+    }
+
+/* Footer */
+footer {
+    color: rgb(55, 55, 55);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+    .social-icons a {
+        margin: 0 10px;
+        color: hsl(0, 0%, 13%);
+        font-size: 1.5rem;
+    }
+
+    .social-icons a:hover {
+        color: hsl(0, 0%, 25%);
+    }
+
+/* Mobile Responsiveness ------------ */
+
+/* Tablet Vertical */
+@media screen and (max-width: 1025) {
+    .nav-left h1 {
+        font-size: 1.5rem !important;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .featured-artical h1 {
+        font-size: 2.2rem;
+    }
+
+    .artical h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Phone Vertical */
+@media screen and (max-width: 600px) {
+    
+}
