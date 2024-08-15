@@ -147,12 +147,47 @@ footer {
         font-size: 2.2rem;
     }
 
+    .artical  {
+        font-size: 0.9rem;
+    }
+
     .artical h2 {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 }
 
 /* Phone Vertical */
 @media screen and (max-width: 600px) {
-    
+    .nav-left h1 {
+        font-size: 1rem !important;
+    }
+
+    .nav-right a {
+        font-size: 0.7rem;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .featured-artical h1 {
+        font-size: 1.5rem;
+    }
+
+    .featured-artical p {
+        font-size: 1rem;
+    }
+
+    .artical h2 {
+        font-size: 1.2rem;
+    }
+
+    .artical p {
+        font-size: 0.8rem;
+    }
+
+    .smaller-articals {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
 }

@@ -84,8 +84,16 @@ p {
 
 /* Phone Vertical */
 @media screen and (max-width: 600px) {
+    artical {
+        flex-direction: row;
+    }
+
     artical, .text-content {
         width: 100%;
+    }
+
+    .text-content {
+        width: auto;
     }
 
     h1 {
@@ -95,4 +103,22 @@ p {
     p {
         font-size: 1rem;
     }
+
+    /* Variations */
+    .centered-image-artical img {
+        max-height: 35vh;
+        margin-bottom: 20px;
+    }
+
+    .left-image-artical, .right-image-artical {
+        flex-direction: column;
+    }
+
+    .left-image-artical img, .right-image-artical img {
+        width: 100%;
+        height: auto;
+        max-height: 35vh;
+        margin-bottom: 20px;
+    }
+
 }
