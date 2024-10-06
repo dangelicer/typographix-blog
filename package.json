@@ -1,0 +1,14 @@
+{
+  "name": "typographix---blog",
+  "version": "1.0.0",
+  "description": "typographix blog using SCSS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Gagnon",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.79.4"
+  }
+}
