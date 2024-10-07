@@ -1,0 +1,124 @@
+/* Tablet Vertical */
+@media screen and (max-width: 1025px) {
+    .nav-left h1 {
+        font-size: 1.5rem !important;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .featured-artical h1 {
+        font-size: 2.2rem;
+    }
+
+    .artical  {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+
+        &-skeleton {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+        }
+    }
+
+    .smaller-articals {
+        flex-direction: column;
+    }
+
+    article {
+        width: 95%;
+        margin: 30px auto;
+
+        .text-content {
+            width: 90%;
+        }
+    
+        h1 {
+            font-size: 2.2rem;
+        }
+    
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    /* Variations */
+    .centered-image-artical img {
+        max-height: 35vh;
+        margin-bottom: 20px;
+    }
+
+    .left-image-artical, .right-image-artical {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 35vh;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/* Phone Vertical */
+@media screen and (max-width: 600px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 5%;
+
+        .nav-right a {
+            margin-left: unset;
+            margin-right: 20px;
+        }
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .featured-artical{
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .artical {
+        margin: 10px 0;
+
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+
+    .smaller-articals {
+        flex-direction: column;
+    }
+
+    artical .text-content {
+        width: 100%;
+
+        .text-content {
+            width: auto;
+        }
+    
+        h1 {
+            font-size: 1.8rem;
+        }
+    
+        p {
+            font-size: 1rem;
+        }
+    }
+
+}
